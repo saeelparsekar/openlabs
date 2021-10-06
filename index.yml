@@ -24,6 +24,10 @@ backend:
     services:
         - vsi
 tileInfo:
+    - title: MariaDB Overview
+      description: Understand features and architecture of MariaDB.
+      duration: 5 min
+      content: overview.md
     - title: MariaDB Operator installation verification
       description:
           Learn how to verify that the MariaDB Operator has been properly installed
