@@ -29,8 +29,7 @@ environment:
 backend:
     credits:
         unitsPerHour: 2
-    services:
-        - vsi
+    service: vsi
 tileInfo:
     - title: MariaDB Overview
       description: Understand features and architecture of MariaDB.
