@@ -39,6 +39,6 @@ tileInfo:
       duration: 10 min
       content: create-instance.md
     - title: MariaDB Database Access and table creation inside database.
-      description:Learn how to access MariaDB Database and create table inside database.
+      description: Learn how to access MariaDB Database and create table inside database.
       duration: 10 min
       content: access-database.md
