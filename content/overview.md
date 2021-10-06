@@ -14,7 +14,7 @@ MariaDB Operator is a key technology for MariaDB cloud strategy that assists in 
 
 ### Architecture
 
-![arch](../_images/arch.png)
+![arch](../_images/maria-arch.png)
 
 
 ### Objective of tutorial
