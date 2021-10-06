@@ -1,13 +1,20 @@
 ---
 name: MariaDB Operator
 description: Get started with Marid DB and become Zero to Hero in quick time.
-logo: _images/logo.png
+branding:
+    logo: _images/logo.png
+    banner: _images/banner.png
+    textColor: '#FFFFFF'
+    header:
+        link: https://mariadb.com/
+        text: MariaDB
+        logo: _images/logo.png
 license: MIT
 duration: 1 hour
 categories:
     - Database
 intro: README.md
-documentation: https://github.com/imdurgadas/openlabs
+documentation: https://mariadb.com/kb/en/documentation/
 commands:
     - name: Install Operator
       cmd: kubectl create -f https://operatorhub.io/install/mariadb-operator-app.yaml
