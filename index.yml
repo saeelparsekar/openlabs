@@ -1,0 +1,36 @@
+---
+name: EDGE labs
+description: Get your product to the consumer in quick time.
+logo: _images/logo.png
+license: MIT
+duration: 1 hour
+categories:
+    - Services
+intro: README.md
+commands:
+    - name: Install Operator
+      cmd: kubectl create -f https://operatorhub.io/install/mariadb-operator-app.yaml
+      cwd: /home/student
+      stepMessage: Installing Operator ....
+environment:
+    terminal: true
+    showide: true
+    apps:
+        - name: Placeholder Tab
+          url: '{{ DNS.host }}/app'
+backend:
+    credits:
+        unitsPerHour: 2
+    services:
+        - vsi
+tileInfo:
+    - title: MariaDB Operator installation verification
+      description:
+          Learn how to verify that the MariaDB Operator has been properly installed
+          in the namespace.
+      duration: 10 min
+      content: operator-status.md
+    - title: MariaDB Instance creation
+      description: Learn how to create Instance of MariaDB operator
+      duration: 10 min
+      content: create-instance.md
