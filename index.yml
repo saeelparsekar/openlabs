@@ -1,11 +1,11 @@
 ---
-name: EDGE labs
-description: Get your product to the consumer in quick time.
+name: MariaDB Operator
+description: Get started with Marid DB and become Zero to Hero in quick time.
 logo: _images/logo.png
 license: MIT
 duration: 1 hour
 categories:
-    - Services
+    - Database
 intro: README.md
 commands:
     - name: Install Operator
