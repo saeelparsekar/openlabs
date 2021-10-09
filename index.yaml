@@ -28,7 +28,7 @@ environment:
           url: '{{ DNS.host }}/app'
 backend:
     credits:
-        unitsPerHour: 2
+        unitsPerHour: 1
     service: vsi
 tileInfo:
     - title: MariaDB Overview
