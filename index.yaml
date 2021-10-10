@@ -25,11 +25,11 @@ environment:
         - name: Overview
     terminaltab:
         - show: true
-        - name: Terminal
+          name: Terminal
     idetab:
         - show: true
-        - name: IDE
-        - url: '{{ CODESERVER.host }}/app'
+          name: IDE
+          url: '{{ CODESERVER.host }}/app'
     apps:
         - name: Placeholder Tab
           url: '{{ DNS.host }}/app'
