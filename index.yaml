@@ -21,8 +21,14 @@ commands:
       cwd: /home/student
       stepMessage: Installing Operator ....
 environment:
-    terminal: true
-    showide: true
+    maintab:
+        - name: Overview
+    terminal: 
+        - show: true
+        - name: Terminal
+    ide: 
+        - show: true
+        - name: IDE
     apps:
         - name: Placeholder Tab
           url: '{{ DNS.host }}/app'
