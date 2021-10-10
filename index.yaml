@@ -29,7 +29,7 @@ environment:
 backend:
     credits:
         unitsPerHour: 1
-    service: MOCK-SERVICE-2
+    service: MOCK-SERVICE
 tileInfo:
     - title: MariaDB Overview
       description: Understand features and architecture of MariaDB.
