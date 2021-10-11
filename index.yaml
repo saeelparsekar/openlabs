@@ -20,6 +20,18 @@ commands:
       cmd: kubectl create -f https://operatorhub.io/install/mariadb-operator-app.yaml
       cwd: /home/student
       stepMessage: Installing Operator ....
+    - name: Change Dir
+      cmd: cd..
+      cwd: /home/student
+      stepMessage: Switch directory ....
+    - name: List files
+      cmd: ls -ll
+      cwd: /home/student
+      stepMessage: List files ....
+    - name: Date
+      cmd: date
+      cwd: /home/student
+      stepMessage: Getting current date ....
 environment:
     maintab:
         - name: Overview
