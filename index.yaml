@@ -39,7 +39,7 @@ environment:
     ide:
         name: Code IDE
         enabled: true
-        url: '{{ CODE.url }}'
+        url: '{{ VNC.url }}'
     application:
         - name: App Preview
           url: '{{ DNS.host }}/app'
