@@ -17,7 +17,7 @@ intro: README.md
 documentation: https://mariadb.com/kb/en/documentation/
 commands:
     - name: Current working dir
-      cmd: cwd
+      cmd: pwd
       cwd: /home/student
       stepMessage: Getting current directory ....
     - name: List files from dir
