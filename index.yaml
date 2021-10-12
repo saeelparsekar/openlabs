@@ -16,38 +16,34 @@ categories:
 intro: README.md
 documentation: https://mariadb.com/kb/en/documentation/
 commands:
-    - name: List files
-      cmd: ls -ll
+    - name: Current working dir
+      cmd: cwd
       cwd: /home/student
-      stepMessage: List files ....
+      stepMessage: Getting current directory ....
+    - name: List files from dir
+      cmd: ls
+      cwd: /home/student
+      stepMessage: Listing files from directory ....
     - name: Install Operator
       cmd: kubectl create -f https://operatorhub.io/install/mariadb-operator-app.yaml
       cwd: /home/student
       stepMessage: Installing Operator ....
-    - name: Change Dir
-      cmd: cd..
-      cwd: /home/student
-      stepMessage: Switch directory ....
-    - name: Date
+    - name: Get current date
       cmd: date
       cwd: /home/student
-      stepMessage: Getting current date ....
+      stepMessage: Get current date ....
 environment:
-    maintab:
-        - name: Overview
-    terminaltab:
-        - show: true
-          name: Terminal
-    idetab:
-        - show: true
-          name: IDE
-          url: '{{ CODESERVER.host }}/app'
-    apps:
-        - name: Placeholder Tab
+    terminal:
+        name: Terminal
+        enabled: false
+    ide:
+        name: Code IDE
+        enabled: true
+        url: '{{ CODE.url }}'
+    application:
+        - name: App Preview
           url: '{{ DNS.host }}/app'
 backend:
-    credits:
-        unitsPerHour: 1
     service: MOCK-SERVICE
 tileInfo:
     - title: MariaDB Overview
